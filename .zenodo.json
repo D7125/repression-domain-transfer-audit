@@ -1,0 +1,22 @@
+{
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "mit",
+  "title": "Analysis code: assay match matters more than architecture — a cross-context audit of sequence models for repression-domain selection",
+  "description": "Analysis code for a re-analysis of two published high-throughput screens of human transcriptional repression domains (DelRosso et al. 2023, Nature; Tycko et al. 2025, Nature Biotechnology), testing whether sequence models trained on one recruitment assay (rTetR) transfer to another (dCas9/CD43), and whether motif, domain-family and promoter-robustness annotations carry predictive information beyond amino-acid composition. Includes the shared tile table and the saved per-arm results, so every reported number can be checked without retraining.",
+  "creators": [
+    {
+      "name": "Nguyen, Anh Duy",
+      "orcid": "0009-0002-9193-6164"
+    }
+  ],
+  "keywords": [
+    "repression domain",
+    "transcriptional effector",
+    "cross-context transfer",
+    "sequence model",
+    "ESM-2",
+    "CRISPRi",
+    "reproducibility"
+  ]
+}

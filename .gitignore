@@ -4,6 +4,7 @@
 
 /*
 !/.gitignore
+!/.zenodo.json
 !/README.md
 !/LICENSE
 !/environment.yml
