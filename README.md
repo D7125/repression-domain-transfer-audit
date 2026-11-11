@@ -53,6 +53,18 @@ Order of operations, starting from the downloaded source tables:
 2. `aduy_code/make_fasta.py`, then MMseqs2 clustering at 30 % identity — protein-level clusters used for every train/test split.
 3. `aduy_code/extract_per_residue.py` — ESM-2 per-residue embeddings (about 10 GB on disk; not stored here).
 4. `aduy_code/build_master.py` — writes `run/rev2/master.csv`, the shared tile table (103,248 × 28) used by all later steps.
+
+   A copy is included here as `run/rev2/master.csv.gz`, so the reported numbers can be
+   checked without re-running steps 1–3 (which need about 10 GB of ESM-2 embeddings).
+   Decompress it in place before running anything downstream:
+
+   ```bash
+   gunzip -k run/rev2/master.csv.gz
+   ```
+
+   Its measurement columns (`Avg_pEF`, `R1/R2_pEF`, `Avg_PGK`, the retest replicates,
+   `cd43`, `cd43_br1`, `cd43_br2`) are values from the two source papers above, joined
+   on exact tile sequence; the remaining columns are derived here.
 5. Run the arm of interest (table below).
 6. `run/rev2/paper_numbers.py` — collects the reported numbers from the saved result files.
 

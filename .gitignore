@@ -37,8 +37,10 @@
 !/run/rev2/seeds.md
 !/run/rev2/*.json
 !/run/rev2/*.csv
-# large / third-party-derived tables: regenerate, or fetch from Zenodo
+# the shared tile table ships compressed (14.5 MB); the plain 44 MB copy stays out
 /run/rev2/master.csv
+!/run/rev2/master.csv.gz
+# per-tile prediction tables (41 MB each): regenerate with cd43_topk2.py
 /run/rev2/*_preds.csv
 
 /run/rev3/*
