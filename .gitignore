@@ -53,9 +53,11 @@
 /run/effector2/*
 !/run/effector2/*.py
 
-# source supplementary tables (s1_*, s2_*) belong to the original authors
+# source supplementary tables (s1_*, s2_*) belong to the original authors;
+# these two are derived here and are named in the paper's file table
 /run/tycko/*
 !/run/tycko/domains_cd43.csv
+!/run/tycko/delscan.csv
 
 # --- never
 __pycache__/
