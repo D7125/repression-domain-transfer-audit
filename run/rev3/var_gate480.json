@@ -1,0 +1,20 @@
+[
+ {
+  "tag": "gate480",
+  "seed": 0,
+  "n_test": 13730,
+  "dim": 480,
+  "label": "avg",
+  "rep_cd43": 0.44072915447328526,
+  "ceil_cd43": 0.7821854186661081,
+  "r_cd43model_cd43": 0.6237882375717163,
+  "pct_ceil_cd43model_cd43": 0.7974940758106782,
+  "ceil_pEF": 0.7615786275902625,
+  "r_pEFmodel_pEF": 0.5688253045082092,
+  "pct_ceil_pEFmodel_pEF": 0.7469029249258862,
+  "r_pEFmodel_cd43": 0.13706597685813904,
+  "pct_ceil_pEFmodel_cd43": 0.17523463565951292,
+  "r_cd43model_pEF": 0.12218351662158966,
+  "pct_ceil_cd43model_pEF": 0.16043453977719252
+ }
+]

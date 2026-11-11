@@ -1,0 +1,60 @@
+# Whitelist: ignore everything, then allow only the analysis code and the
+# small saved results the paper cites. Anything new dropped into the folder
+# (tensors, databases, manuscript drafts) stays out of git automatically.
+
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/environment.yml
+!/aduy_code/
+!/run/
+!/figures/
+
+# --- core model + analysis scripts
+/aduy_code/*
+!/aduy_code/*.py
+
+# --- the two scripts that draw the paper's figures (poster scripts stay out)
+/figures/*
+!/figures/make_paper_figures.py
+!/figures/make_fig_topk.py
+
+# --- run/: code for each revision round + small result files
+/run/*
+!/run/rev2/
+!/run/rev3/
+!/run/effector2/
+!/run/tycko/
+!/run/icc_variance.json
+!/run/retest_validate_fixed7.json
+!/run/cls_confirmed.json
+!/run/homeodomain_classes.csv
+
+/run/rev2/*
+!/run/rev2/*.py
+!/run/rev2/*.sh
+!/run/rev2/seeds.md
+!/run/rev2/*.json
+!/run/rev2/*.csv
+# large / third-party-derived tables: regenerate, or fetch from Zenodo
+/run/rev2/master.csv
+/run/rev2/*_preds.csv
+
+/run/rev3/*
+!/run/rev3/*.py
+!/run/rev3/*.sh
+!/run/rev3/*.json
+
+# code only; candidate lists are not part of this paper
+/run/effector2/*
+!/run/effector2/*.py
+
+# source supplementary tables (s1_*, s2_*) belong to the original authors
+/run/tycko/*
+!/run/tycko/domains_cd43.csv
+
+# --- never
+__pycache__/
+*.pyc
+*Identifier

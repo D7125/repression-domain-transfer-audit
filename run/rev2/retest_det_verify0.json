@@ -1,0 +1,17 @@
+[
+  {
+    "seed":0,
+    "n_test_retest":1222,
+    "n_retest_reps":1221,
+    "r_prim_reps":null,
+    "r_retest_reps":0.9082568213,
+    "ceil_primary":null,
+    "ceil_retest_measured":0.9756654367,
+    "ceil_retest_derived":1.0,
+    "r_pred_primary":0.4009595029,
+    "r_pred_retest":0.4184780183,
+    "pct_ceil_primary":null,
+    "pct_ceil_retest":42.8915489395,
+    "diff_pct":null
+  }
+]

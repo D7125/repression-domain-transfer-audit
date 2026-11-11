@@ -1,0 +1,22 @@
+[
+  {
+    "seed":0,
+    "n_test":13730,
+    "n_epochs":10,
+    "r_pEF_reps":null,
+    "r_cd43_reps":0.4407291545,
+    "ceil_pEF":null,
+    "ceil_cd43":0.7821854187,
+    "r_meas_pEF_cd43":0.2128335887,
+    "rho_meas_pEF_cd43":0.1036650444,
+    "r_pEFmodel_pEF":0.5655540585,
+    "r_pEFmodel_cd43":0.1370659928,
+    "rho_pEFmodel_cd43":-0.0297371703,
+    "r_cd43model_pEF":0.1242325373,
+    "r_cd43model_cd43":0.623788299,
+    "rho_cd43model_cd43":0.6282722425,
+    "pct_ceil_pEFmodel_pEF":null,
+    "pct_ceil_pEFmodel_cd43":0.175234656,
+    "pct_ceil_cd43model_cd43":0.7974941543
+  }
+]

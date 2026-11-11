@@ -1,0 +1,26 @@
+# Environment for the repression-domain analysis.
+# Exact versions recorded 28 October 2026 from the env every result was run in.
+name: machine_deep_learning
+channels: [conda-forge, pytorch, nvidia]
+dependencies:
+  - python=3.11.15
+  - numpy=2.4.4
+  - pandas=3.0.2
+  - scipy=1.17.1
+  - scikit-learn=1.8.0
+  - statsmodels=0.15.0
+  - openpyxl
+  - pandoc
+  - pip
+  - pip:
+      - torch==2.11.0+cu128      # CUDA 12.8, RTX 4060 Laptop 8 GB
+      - fair-esm                 # esm2_t12_35M_UR50D, layer 12, D = 480
+# Separate env, because MMseqs2 and HMMER pin conflicting deps:
+#   name: mmseqs
+#   - mmseqs2=18.8cc5c
+#   - hmmer=3.4
+# External databases:
+#   Pfam-A.hmm  downloaded 9 Oct 2026; 30,134 models; DATE records in the file
+#               read Jul 2025; highest accession PF26733. Not a numbered Pfam
+#               release in the 35.0-37.0 series, which hold 19,632-21,979
+#               families -- state the file, not a release number.
